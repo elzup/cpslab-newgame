@@ -70,6 +70,12 @@ class AppComponent extends React.Component {
               />
               <TopMenuItem href={'/#about'} label="ABOUT"/>
               <TopMenuItem href={'/#link'} label="LINK"/>
+              <TopMenuItem href={'/#tech'} label="TECH"/>
+              <TopMenuItem
+                href={'https://cps.im.dendai.ac.jp/index.php?4Student#s66ffaeb'}
+                label="CONTACT"
+                targetBlank={true}
+              />
               {/*<TopMenuItem href={'/skills'} label="SKILLS" />*/}
               {/*<TopMenuItem href={'/members'} label="MEMBERS" />*/}
               {/*<TopMenuItem href={'/systems'} label="SYSTEMS" />*/}
@@ -117,6 +123,13 @@ class AppComponent extends React.Component {
         <div className="contents-container">
           <h2 id="link">関連企業</h2>
           {camps}
+        </div>
+
+        <div className="contents-container">
+          <h2 id="tech">研究室で流行りの技術</h2>
+          <div id="techImgs">
+            <img src={require('../images/techs.png')} alt=""/>
+          </div>
         </div>
       </div>
     );
