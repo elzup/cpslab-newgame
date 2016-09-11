@@ -10,6 +10,33 @@ const subTitleImage = require('../images/seisyun.png');
 
 class AppComponent extends React.Component {
   render() {
+    const courses = [
+      {
+        label: '2016年進路',
+        names: 'リクルート,アクセンチュア,サイバーエージェント,ニフティ,Wantedly,ＮＴＴデータ,パナソニック,ＴＩＳ,富士通,毎日新聞,海上自衛隊一般幹部候補生,シー・エス・イーＰＣＩホールディングス,日本証券テクノロジー,ライターム'.split(',')
+      },
+      {
+        label: '2015年進路',
+        names: '三菱電機,gloops,ソフトクリエイトHD,キャノンアイテック,アドウェイズ,ピクシブ株,DMM.comラボ,RCソリューション,株式会社ミッジシステム,BPS株式会社,東京システムハウス株式会社'.split(',')
+      },
+      {
+        label: '共同研究先',
+        names: '株式会社リプロ,フィグラ株式会社,BPS株式会社,報映産業,東芝デザインセンター,タカヤ株式会社,大船渡津波伝承館'.split(',')
+      },
+      {
+        label: '主なインターン・バイト先(2015-2016)',
+        names: 'DeNA,クックパッド,Wantedly,カディンチェ,株式会社レピダム,サイバーエージェント,ピクシブ株,tritrue,BPS株式会社,MOLCURE'.split(',')
+      }
+    ];
+    const camps = courses.map(c => {
+      const lis = c.names.map(name => (<li>{name}</li>))
+      return (
+        <div className="camps">
+          <h3>{c.label}</h3>
+          <ul>{lis}</ul>
+        </div>
+      )
+    });
     return (
       <div className="index" id="wrapper">
         <header id="top_header">
@@ -42,7 +69,7 @@ class AppComponent extends React.Component {
                 targetBlank={true}
               />
               <TopMenuItem href={'/#about'} label="ABOUT"/>
-              <TopMenuItem href={'/#works'} label="WORKS"/>
+              <TopMenuItem href={'/#link'} label="LINK"/>
               {/*<TopMenuItem href={'/skills'} label="SKILLS" />*/}
               {/*<TopMenuItem href={'/members'} label="MEMBERS" />*/}
               {/*<TopMenuItem href={'/systems'} label="SYSTEMS" />*/}
@@ -85,6 +112,11 @@ class AppComponent extends React.Component {
               <tr><td>無線センサネットワークを応用した空調自動制御や歩行者ナビゲーションシステム</td></tr>
             </tbody>
           </table>
+        </div>
+
+        <div className="contents-container">
+          <h2 id="link">関連企業</h2>
+          {camps}
         </div>
       </div>
     );

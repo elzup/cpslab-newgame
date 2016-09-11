@@ -81,6 +81,7 @@ li {
   background: white;
   box-shadow: 0 0 0 10px white;
   padding: 35px;
+  margin-bottom: 40px;
 }
 
 .contents-container h2 {
@@ -101,4 +102,15 @@ li {
 
 .themaFirst {
   margin-top: 5px;
+}
+
+.camps ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.camps li:not(:first-child) {
+  border-left: solid;
+  padding-left: 5px;
+  margin-left: 5px;
 }
