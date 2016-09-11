@@ -39,6 +39,10 @@ body {
   text-align: center;
 }
 
+#top_announce p:last-child {
+  color: #ab3a00;
+}
+
 #center img {
   border: solid white 10px;
   transform: rotateZ(5deg);
