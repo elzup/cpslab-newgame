@@ -3,4 +3,5 @@
   height: 50px;
   border-radius: 50%;
   background: #fff url(../../images/social.png) no-repeat left top;
+  margin-left: 5px;
 }

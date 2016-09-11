@@ -6,9 +6,34 @@
   border: solid white 3px;
   border-radius: 50%;
   text-align: center;
+  background-size: 30px;
+}
+
+.menuItem.news {
+  background-color: #FBCC44;
+  background-image: linear-gradient(-45deg, #FABF15 25%, transparent 25%,
+  transparent 50%, #FABF15 50%, #FABF15 75%,
+  transparent 75%, transparent);
+}
+
+.menuItem.about {
+  background-color: #CF95C1;
+  background-image: linear-gradient(-45deg, #C37BB1 25%, transparent 25%,
+  transparent 50%, #C37BB1 50%, #C37BB1 75%,
+  transparent 75%, transparent);
+}
+
+.menuItem.works {
+  background-color: #F19499;
+  background-image: linear-gradient(-45deg, #ED7980 25%, transparent 25%,
+  transparent 50%, #ED7980 50%, #ED7980 75%,
+  transparent 75%, transparent);
 }
 
 .menuItem a {
   display: block;
   padding: 40px 0;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -1,11 +1,14 @@
 import React from 'react';
-require('./TopMenuItem.css');
+const style = require('./TopMenuItem.css');
 
-const TopMenuItem = ({label, href}) => (
-  <li className="menuItem">
-    <a href={href}>{label}</a>
-  </li>
-);
+const TopMenuItem = ({label, href}) => {
+
+  return (
+    <li className={"menuItem " + label.toLowerCase()}>
+      <a href={href}>{label}</a>
+    </li>
+  )
+};
 
 TopMenuItem.propTypes = {
   label: React.PropTypes.string.isRequired,
