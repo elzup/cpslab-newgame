@@ -9,7 +9,7 @@ const SocialLinkItem = ({name, href}) => {
     'home': '-150px'
   }[name];
   const cssBg = {
-    "background-position": bgLeftPos
+    backgroundPosition: bgLeftPos
   };
   return (
     <li className="item" style={cssBg} onClick={e => {
