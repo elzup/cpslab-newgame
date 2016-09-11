@@ -5,6 +5,8 @@ import SocialLinkItem from './SocialLinkItem/SocialLinkItem';
 require('normalize.css/normalize.css');
 require('styles/App.css');
 const topImage = require('../images/cpslab-top.jpg');
+const logoImage = require('../images/logo.png');
+const subTitleImage = require('../images/seisyun.png');
 
 class AppComponent extends React.Component {
   render() {
@@ -17,7 +19,9 @@ class AppComponent extends React.Component {
             <p>研究生募集開始!</p>
           </div>
           <div id="top_log">
-            <h1>IWI LABO!</h1>
+            <h1>
+              <img id="logo" src={logoImage} alt=""/>
+            </h1>
           </div>
           <ul id="links">
             <SocialLinkItem href={"http://www.cps.im.dendai.ac.jp/"} name={"home"} />
@@ -41,7 +45,7 @@ class AppComponent extends React.Component {
             <img src={topImage} alt="cps camp image" />
           </div>
           <div id="right">
-
+            <img src={subTitleImage} alt=""/>
           </div>
         </div>
       </div>
