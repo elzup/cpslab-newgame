@@ -1,7 +1,8 @@
 import React from 'react';
+require('./TopMenuItem.css');
 
 const TopMenuItem = ({label, href}) => (
-  <li>
+  <li className="menuItem">
     <a href={href}>{label}</a>
   </li>
 );
