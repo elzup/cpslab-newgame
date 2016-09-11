@@ -43,9 +43,13 @@ body {
   color: #ab3a00;
 }
 
+#center {
+  z-index: -1;
+}
+
 #center img {
   border: solid white 10px;
-  transform: rotateZ(5deg);
+  transform: rotateZ(20deg);
   z-index: 1;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -58,6 +62,7 @@ body {
 
 #left, #right {
   width: 200px;
+  z-index: 10;
 }
 
 #right img {
@@ -78,7 +83,7 @@ li {
 .contents-container {
   border: solid #7ECDDC 8px;
   border-radius: 20px;
-  background: white;
+  background: white url("../images/bg-cells.png");
   box-shadow: 0 0 0 10px white;
   padding: 35px;
   margin-bottom: 40px;

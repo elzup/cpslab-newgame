@@ -1,11 +1,12 @@
 
 
 .menuItem {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: solid white 3px;
   border-radius: 50%;
   text-align: center;
+  margin-top: 10px;
   background-size: 30px;
 }
 
@@ -23,17 +24,32 @@
   transparent 75%, transparent);
 }
 
-.menuItem.works {
+.menuItem.link {
   background-color: #F19499;
   background-image: linear-gradient(-45deg, #ED7980 25%, transparent 25%,
   transparent 50%, #ED7980 50%, #ED7980 75%,
   transparent 75%, transparent);
 }
 
+.menuItem.tech {
+  background-color: #f4a578;
+  background-image: linear-gradient(-45deg, #F18F56 25%, transparent 25%,
+  transparent 50%, #F18F56 50%, #F18F56 75%,
+  transparent 75%, transparent);
+}
+
+.menuItem.contact {
+  background-color: #FF706D;
+  background-image: linear-gradient(-45deg, #FF4C48 25%, transparent 25%,
+  transparent 50%, #FF4C48 50%, #FF4C48 75%,
+  transparent 75%, transparent);
+}
+
 .menuItem a {
   display: block;
-  padding: 40px 0;
+  padding: 35px 0;
   color: white;
+  font-size: 12px;
   font-weight: bold;
   text-decoration: none;
 }
